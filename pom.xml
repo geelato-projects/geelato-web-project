@@ -105,11 +105,11 @@
         </dependency>
 
         <!--轻量级的规则引擎-->
-        <dependency>
-            <groupId>org.jeasy</groupId>
-            <artifactId>easy-rules-core</artifactId>
-            <version>3.0.0</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.jeasy</groupId>-->
+            <!--<artifactId>easy-rules-core</artifactId>-->
+            <!--<version>3.0.0</version>-->
+        <!--</dependency>-->
         <!--java性能高、内存占用小的序列化工具-->
         <dependency>
             <groupId>de.ruedigermoeller</groupId>

@@ -45,3 +45,14 @@ VALUES
 -- 初始化系统配置
 INSERT INTO `sys_common_general_config`(id,create_at,creator,update_at,updater,name,code,value,seq,description,check_status)
 VALUES (1,NOW(), 1, NOW(), 1, '平台启动应用', 'START_APP', 'dev',1, '平台启动时触发的应用',0);
+
+
+-- 初始化DEMO实体
+INSERT INTO `platform_demo_entity` (id, create_at, creator, update_at, updater, name, code, content, type, description, check_status)
+VALUES (1, NOW(), 1, NOW(), 1, '示例实体1', 'demoEntity1', 'demoEntityContent1', 'type1', '示例实体描述1', 0);
+INSERT INTO `platform_demo_entity` (id, create_at, creator, update_at, updater, name, code, content, type, description, check_status)
+VALUES (1, NOW(), 1, NOW(), 1, '示例实体2', 'demoEntity2', 'demoEntityContent2', 'type2', '示例实体描述2', 0);
+INSERT INTO `platform_demo_entity` (id, create_at, creator, update_at, updater, name, code, content, type, description, check_status)
+VALUES (1, NOW(), 1, NOW(), 1, '示例实体3', 'demoEntity3', 'demoEntityContent3', 'type3', '示例实体描述3', 0);
+INSERT INTO `platform_demo_entity` (id, create_at, creator, update_at, updater, name, code, content, type, description, check_status)
+VALUES (1, NOW(), 1, NOW(), 1, '示例实体4', 'demoEntity4', 'demoEntityContent4', 'type4', '示例实体描述4', 0);
