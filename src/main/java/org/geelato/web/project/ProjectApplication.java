@@ -20,10 +20,10 @@ public class ProjectApplication extends PlatformApplication {
 
 
     public static void main(String[] args) {
-        if (args.length == 0) {
-            args = new String[1];
-            args[0] = "startFromMain";
-        }
+//        if (args.length == 0) {
+//            args = new String[1];
+//            args[0] = "startFromMain";
+//        }
         SpringApplication.run(ProjectApplication.class, args);
     }
 }
