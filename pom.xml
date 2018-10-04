@@ -125,6 +125,13 @@
     </dependencies>
 
     <build>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-ssh</artifactId>
+                <version>${wagon-ssh.version}</version>
+            </extension>
+        </extensions>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -140,6 +147,27 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <!--最长启动时间-->
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>wagon-maven-plugin</artifactId>
+                <version>1.0</version>
+                <!-- 运行package打包的同时运行upload-single和sshexec -->
+                <configuration>
+                    <serverId>itgRemote</serverId>
+                    <url>scp://112.74.108.105</url>
+                    <fromDir>target</fromDir>
+                    <includes>*.jar</includes>
+                    <!--注意该目录从根目录"/"开始，并非当前用户目录开始-->
+                    <toDir>itgdata/deploy/upload/app</toDir>
+                    <commands>
+                        <command>/itgdata/web/deploy.sh</command>
+                        <!--<command>rm -rf /coder/tomcat/apache-tomcat-7.0.55/webapps/javawebdeploy</command>-->
+                        <!--<command>sh /coder/tomcat/apache-tomcat-7.0.55/bin/startup.sh</command>-->
+                    </commands>
+                    <displayCommandOutputs>true</displayCommandOutputs>
+                </configuration>
             </plugin>
         </plugins>
     </build>
