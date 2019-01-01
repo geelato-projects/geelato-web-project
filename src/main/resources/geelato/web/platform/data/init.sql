@@ -56,8 +56,8 @@ VALUES
 --   (1,NOW(), 'boolean', 1, '', 'string', 1, '数据类型', '布尔(boolean)', 1, 'DATA_TYPE', NOW(),0);
 
 -- 初始化系统配置
-INSERT INTO `platform_common_config` (id, create_at, creator, update_at, updater, name, code, value, ownerId, seq, description, check_status)
-VALUES (1, NOW(), 1, NOW(), 1, '平台启动应用', 'START_APP', 'workbench', 'platform', 1, '平台启动时触发的应用', 0);
+INSERT INTO `platform_common_config` (id, create_at, creator, update_at, updater, name, code, value, seq, description, check_status)
+VALUES (1, NOW(), 1, NOW(), 1, '平台启动应用', 'START_APP', 'workbench', 1, '平台启动时触发的应用', 0);
 
 -- 初始化DEMO实体
 INSERT INTO `platform_demo_entity` (id, create_at, creator, update_at, updater, name, code, content, type, description, check_status)
