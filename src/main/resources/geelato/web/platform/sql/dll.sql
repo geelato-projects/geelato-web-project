@@ -51,7 +51,7 @@ DROP TABLE IF EXISTS $.tableName;
 
 -- 从数据库字典中同步表信息到平台的元数据表中
 -- @sql syncTableSchemaToConfig
-INSERT INTO xpm.dev_table_config (
+INSERT INTO xpm.platform_dev_table (
   TABLE_SCHEMA,
   TABLE_NAME,
   TABLE_TYPE,
@@ -85,7 +85,7 @@ INSERT INTO xpm.dev_table_config (
       SELECT
         table_name
       FROM
-        xpm.dev_table_config
+        xpm.platform_dev_table
     )
 
 -- 在数据库中增加字段 INT (1)
