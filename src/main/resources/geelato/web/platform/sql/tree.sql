@@ -6,6 +6,7 @@
 -- @sql select_tree_node_left_join
 select
   tn.id          tn_id,
+  tn.text        tn_text,
   tn.parent      tn_parent,
   tn.icon        tn_icon,
   tn.`type`      tn_type,
