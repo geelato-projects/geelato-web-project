@@ -27,118 +27,12 @@
     </dependencyManagement>
 
     <dependencies>
-        <!--<dependency>-->
-            <!--<groupId>org.geelato</groupId>-->
-            <!--<artifactId>geelato-utils</artifactId>-->
-            <!--<version>1.0.0-SNAPSHOT</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.geelato</groupId>-->
-            <!--<artifactId>geelato-core</artifactId>-->
-            <!--<version>1.0.0-SNAPSHOT</version>-->
-        <!--</dependency>-->
         <dependency>
             <groupId>org.geelato</groupId>
             <artifactId>geelato-web-platform</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.boot</groupId>-->
-            <!--<artifactId>spring-boot-starter-jdbc</artifactId>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.boot</groupId>-->
-            <!--<artifactId>spring-boot-starter-web</artifactId>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.boot</groupId>-->
-            <!--<artifactId>spring-boot-starter-data-redis</artifactId>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--<groupId>org.springframework.session</groupId>-->
-        <!--<artifactId>spring-session</artifactId>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>mysql</groupId>-->
-            <!--<artifactId>mysql-connector-java</artifactId>-->
-            <!--<scope>runtime</scope>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.boot</groupId>-->
-            <!--<artifactId>spring-boot-starter-test</artifactId>-->
-            <!--<scope>test</scope>-->
-        <!--</dependency>-->
 
-        <!--shiro-->
-        <!--<dependency>-->
-            <!--<groupId>org.apache.shiro</groupId>-->
-            <!--<artifactId>shiro-web</artifactId>-->
-            <!--<version>1.3.2</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.apache.shiro</groupId>-->
-            <!--<artifactId>shiro-ehcache</artifactId>-->
-            <!--<version>1.3.2</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.apache.shiro</groupId>-->
-            <!--<artifactId>shiro-spring</artifactId>-->
-            <!--<version>1.3.2</version>-->
-        <!--</dependency>-->
-
-        <!--utils.Encodes引入的两个包，待分析是否可以去除-->
-        <!--<dependency>-->
-            <!--<groupId>commons-codec</groupId>-->
-            <!--<artifactId>commons-codec</artifactId>-->
-            <!--<version>1.10</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.apache.commons</groupId>-->
-            <!--<artifactId>commons-lang3</artifactId>-->
-            <!--<version>3.4</version>-->
-        <!--</dependency>-->
-
-        <!--<dependency>-->
-            <!--<groupId>com.alibaba</groupId>-->
-            <!--<artifactId>fastjson</artifactId>-->
-            <!--<version>1.2.31</version>-->
-        <!--</dependency>-->
-
-        <!--轻量级的规则引擎-->
-        <!--<dependency>-->
-        <!--<groupId>org.jeasy</groupId>-->
-        <!--<artifactId>easy-rules-core</artifactId>-->
-        <!--<version>3.0.0</version>-->
-        <!--</dependency>-->
-        <!--java性能高、内存占用小的序列化工具-->
-        <!--<dependency>-->
-            <!--<groupId>de.ruedigermoeller</groupId>-->
-            <!--<artifactId>fst</artifactId>-->
-            <!--<version>${fst-version}</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>commons-beanutils</groupId>-->
-            <!--<artifactId>commons-beanutils</artifactId>-->
-            <!--<version>${commons-beanutils-version}</version>-->
-        <!--</dependency>-->
-        <!--&lt;!&ndash;二级缓存&ndash;&gt;-->
-        <!--<dependency>-->
-            <!--<groupId>net.oschina.j2cache</groupId>-->
-            <!--<artifactId>j2cache-core</artifactId>-->
-            <!--<version>${j2cache-version}</version>-->
-            <!--<exclusions>-->
-                <!--<exclusion>-->
-                    <!--<groupId>org.slf4j</groupId>-->
-                    <!--<artifactId>slf4j-simple</artifactId>-->
-                <!--</exclusion>-->
-            <!--</exclusions>-->
-            <!--<scope>provided</scope>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.ehcache</groupId>-->
-            <!--<artifactId>ehcache</artifactId>-->
-            <!--<version>${ehcache-version}</version>-->
-        <!--</dependency>-->
 
     </dependencies>
 
@@ -173,7 +67,7 @@
                 <version>1.0</version>
                 <!-- 运行package打包的同时运行upload-single和sshexec -->
                 <configuration>
-                    <serverId>itgRemote</serverId>
+                    <serverId>itg</serverId>
                     <url>scp://47.92.129.136</url>
                     <fromDir>target</fromDir>
                     <includes>*.jar</includes>
