@@ -5,12 +5,12 @@
     <parent>
         <artifactId>geelato-parent</artifactId>
         <groupId>org.geelato</groupId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.2-SNAPSHOT</version>
         <relativePath>../geelato-parent</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>geelato-web-project</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.2-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>geelato-web-project</name>
     <!--通过该方式，则不需继承spring-boot-starter-parent-->
@@ -30,10 +30,8 @@
         <dependency>
             <groupId>org.geelato</groupId>
             <artifactId>geelato-web-platform</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>1.0.2-SNAPSHOT</version>
         </dependency>
-
-
     </dependencies>
 
     <build>
