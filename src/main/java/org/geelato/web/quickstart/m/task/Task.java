@@ -1,13 +1,16 @@
-package org.geelato.web.project.entity.task;
+package org.geelato.web.quickstart.m.task;
 
+
+import org.geelato.core.meta.annotation.Col;
+import org.geelato.core.meta.annotation.Entity;
 import org.geelato.core.meta.annotation.Title;
 import org.geelato.core.meta.model.entity.BaseEntity;
 
-//@Entity(name = "prj_req")
-@Title(title = "需求")
-public class Requirement extends BaseEntity{
+@Entity(name = "prj_task")
+@Title(title = "任务")
+public class Task extends BaseEntity {
     private String title;
-    private String src;
+    private String type;
     private String priority;
     private Long submitter;
     private Long assignor;
@@ -16,6 +19,15 @@ public class Requirement extends BaseEntity{
     private String description;
     private int seq;
 
+
+    public Task() {
+    }
+
+    public Task(Long id) {
+        this.setId(id);
+    }
+
+    @Title(title = "标题")
     public String getTitle() {
         return title;
     }
@@ -24,14 +36,16 @@ public class Requirement extends BaseEntity{
         this.title = title;
     }
 
-    public String getSrc() {
-        return src;
+    @Title(title = "类型")
+    public String getType() {
+        return type;
     }
 
-    public void setSrc(String src) {
-        this.src = src;
+    public void setType(String type) {
+        this.type = type;
     }
 
+    @Title(title = "优先级")
     public String getPriority() {
         return priority;
     }
@@ -40,6 +54,7 @@ public class Requirement extends BaseEntity{
         this.priority = priority;
     }
 
+    @Title(title = "提交者")
     public Long getSubmitter() {
         return submitter;
     }
@@ -48,6 +63,7 @@ public class Requirement extends BaseEntity{
         this.submitter = submitter;
     }
 
+    @Title(title = "指派者")
     public Long getAssignor() {
         return assignor;
     }
@@ -56,6 +72,7 @@ public class Requirement extends BaseEntity{
         this.assignor = assignor;
     }
 
+    @Title(title = "修复版本")
     public String getFixVersion() {
         return fixVersion;
     }
@@ -64,6 +81,8 @@ public class Requirement extends BaseEntity{
         this.fixVersion = fixVersion;
     }
 
+    @Col(name = "project_id")
+    @Title(title = "所属项目")
     public Long getProjectId() {
         return projectId;
     }
@@ -72,19 +91,21 @@ public class Requirement extends BaseEntity{
         this.projectId = projectId;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
+    @Title(title = "次序")
     public int getSeq() {
         return seq;
     }
 
     public void setSeq(int seq) {
         this.seq = seq;
+    }
+
+    @Title(title = "描述")
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }

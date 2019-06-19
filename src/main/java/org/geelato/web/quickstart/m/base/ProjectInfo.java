@@ -1,23 +1,21 @@
-package org.geelato.web.project.entity.task;
-
+package org.geelato.web.quickstart.m.base;
 
 import org.geelato.core.meta.annotation.Entity;
 import org.geelato.core.meta.annotation.Title;
 import org.geelato.core.meta.model.entity.BaseEntity;
 
-@Entity(name = "prj_task_type")
-@Title(title = "任务")
-public class TaskType extends BaseEntity {
+/**
+ * @author geemeta
+ */
+@Entity(name = "prj_project_info")
+@Title(title = "项目")
+public class ProjectInfo extends BaseEntity{
+
     private String name;
     private String code;
+    private Long ownerId;
+    private Long parentId;
     private String description;
-
-    public TaskType() {
-    }
-
-    public TaskType(Long id) {
-        this.setId(id);
-    }
 
     @Title(title = "名称")
     public String getName() {
@@ -37,6 +35,24 @@ public class TaskType extends BaseEntity {
         this.code = code;
     }
 
+    @Title(title = "所有者")
+    public Long getOwnerId() {
+        return ownerId;
+    }
+
+    public void setOwnerId(Long ownerId) {
+        this.ownerId = ownerId;
+    }
+
+    @Title(title = "父级项目")
+    public Long getParentId() {
+        return parentId;
+    }
+
+    public void setParentId(Long parentId) {
+        this.parentId = parentId;
+    }
+
     @Title(title = "描述")
     public String getDescription() {
         return description;
@@ -45,4 +61,6 @@ public class TaskType extends BaseEntity {
     public void setDescription(String description) {
         this.description = description;
     }
+
+
 }
