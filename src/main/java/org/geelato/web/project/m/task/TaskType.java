@@ -1,18 +1,23 @@
-package org.geelato.web.quickstart.m.base;
+package org.geelato.web.project.m.task;
+
 
 import org.geelato.core.meta.annotation.Entity;
 import org.geelato.core.meta.annotation.Title;
 import org.geelato.core.meta.model.entity.BaseEntity;
 
-/**
- *
- */
-@Entity(name = "prj_company")
-@Title(title = "工作单位")
-public class Company extends BaseEntity {
+@Entity(name = "prj_task_type")
+@Title(title = "任务")
+public class TaskType extends BaseEntity {
     private String name;
-    private String type;
+    private String code;
     private String description;
+
+    public TaskType() {
+    }
+
+    public TaskType(Long id) {
+        this.setId(id);
+    }
 
     @Title(title = "名称")
     public String getName() {
@@ -23,13 +28,13 @@ public class Company extends BaseEntity {
         this.name = name;
     }
 
-    @Title(title = "类型")
-    public String getType() {
-        return type;
+    @Title(title = "编码")
+    public String getCode() {
+        return code;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setCode(String code) {
+        this.code = code;
     }
 
     @Title(title = "描述")

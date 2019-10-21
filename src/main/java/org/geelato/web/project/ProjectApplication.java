@@ -1,4 +1,4 @@
-package org.geelato.web.quickstart;
+package org.geelato.web.project;
 
 import org.geelato.web.platform.boot.BootApplication;
 import org.slf4j.Logger;

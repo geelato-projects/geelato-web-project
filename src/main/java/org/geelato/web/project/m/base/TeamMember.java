@@ -1,4 +1,4 @@
-package org.geelato.web.quickstart.m.base;
+package org.geelato.web.project.m.base;
 
 import org.geelato.core.meta.annotation.Entity;
 import org.geelato.core.meta.annotation.Title;
