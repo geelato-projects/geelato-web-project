@@ -48,7 +48,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <!-- 指定该Main Class为全局的唯一入口 -->
-                    <mainClass>org.geelato.web.project.ProjectApplication</mainClass>
+                    <mainClass>org.geelato.web.crm.ProjectApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>

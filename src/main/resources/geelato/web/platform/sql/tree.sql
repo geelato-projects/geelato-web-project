@@ -15,3 +15,7 @@ select
   t.*
 from platform_tree_node tn left join $.tableName t on tn.id = t.tree_node_id
 where tn.tree_id = $.treeId
+
+-- @sql select_platform_menu
+SELECT tn.id,tn.`TEXT` name,tn.parent parentId,tn.`type` component,tn.icon icon,tn.meta,tn.tree_id treeId FROM platform_tree_node tn ,platform_app prj WHERE tn.tree_id = prj.id
+UNION SELECT id,`name`,'' parentId,'default' component,'' icon,'' meta,id treeId FROM platform_app order by treeId,parentId ASC

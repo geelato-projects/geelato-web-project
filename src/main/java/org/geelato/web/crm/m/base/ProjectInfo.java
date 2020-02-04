@@ -1,4 +1,4 @@
-package org.geelato.web.project.m.base;
+package org.geelato.web.crm.m.base;
 
 import org.geelato.core.meta.annotation.Entity;
 import org.geelato.core.meta.annotation.Title;

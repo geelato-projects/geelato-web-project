@@ -1,4 +1,4 @@
-package org.geelato.web.project;
+package org.geelato.web.crm;
 
 import org.geelato.web.platform.boot.BootApplication;
 import org.slf4j.Logger;
