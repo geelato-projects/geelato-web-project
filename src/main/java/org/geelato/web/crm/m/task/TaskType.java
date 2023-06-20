@@ -15,7 +15,7 @@ public class TaskType extends BaseEntity {
     public TaskType() {
     }
 
-    public TaskType(Long id) {
+    public TaskType(String id) {
         this.setId(id);
     }
 

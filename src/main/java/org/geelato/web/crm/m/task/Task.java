@@ -23,7 +23,7 @@ public class Task extends BaseEntity {
     public Task() {
     }
 
-    public Task(Long id) {
+    public Task(String id) {
         this.setId(id);
     }
 
