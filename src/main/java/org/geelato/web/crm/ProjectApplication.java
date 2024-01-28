@@ -1,6 +1,5 @@
 package org.geelato.web.crm;
 
-import org.geelato.web.crm.m.base.Company;
 import org.geelato.web.platform.boot.BootApplication;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,7 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @ComponentScan(basePackages = {"org.geelato"})
 public class ProjectApplication extends BootApplication {
-    private static Logger logger = LoggerFactory.getLogger(ProjectApplication.class);
+    private static final Logger logger = LoggerFactory.getLogger(ProjectApplication.class);
 
     @Override
     public void run(String... strings) throws Exception {
