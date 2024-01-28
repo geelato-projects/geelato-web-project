@@ -1,5 +1,6 @@
 package org.geelato.web.crm;
 
+import org.geelato.web.crm.m.base.Company;
 import org.geelato.web.platform.boot.BootApplication;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
